@@ -1,0 +1,86 @@
+# Ghostty Configuration
+# Modern terminal with Rust tools and Tokyo Night theme
+
+# Font configuration
+# font-family = "SauceCodePro Nerd Font"
+font-family = "RobotoMono Nerd Font"
+font-size = 14
+font-thicken = true
+
+# Theme - Tokyo Night inspired colors
+background = #1a1b26
+foreground = #c0caf5
+cursor-color = #c0caf5
+selection-background = #28344a
+selection-foreground = #c0caf5
+
+# Tokyo Night color palette
+palette = 0=#15161e
+palette = 1=#f7768e
+palette = 2=#9ece6a
+palette = 3=#e0af68
+palette = 4=#7aa2f7
+palette = 5=#bb9af7
+palette = 6=#7dcfff
+palette = 7=#a9b1d6
+palette = 8=#414868
+palette = 9=#f7768e
+palette = 10=#9ece6a
+palette = 11=#e0af68
+palette = 12=#7aa2f7
+palette = 13=#bb9af7
+palette = 14=#7dcfff
+palette = 15=#c0caf5
+
+# Window appearance
+window-padding-x = 10
+window-padding-y = 10
+window-decoration = true
+window-theme = dark
+
+# Shell configuration
+# Start with zsh by default to load AWS secrets
+# Users can then switch to nushell if desired
+command = /bin/zsh -c "source ~/.config/ghostty/init.sh && exec zsh"
+
+# Shell integration features
+shell-integration = zsh
+shell-integration-features = cursor,sudo,title
+
+# Scrollback
+scrollback-limit = 10000
+
+# Mouse
+mouse-hide-while-typing = true
+
+# Copy on select
+copy-on-select = true
+
+# Cursor
+cursor-style = block
+cursor-style-blink = true
+
+# Window behavior
+confirm-close-surface = true
+quit-after-last-window-closed = true
+
+# Keybindings
+# Note: These need to be valid Ghostty actions
+# keybind = cmd+k=clear_scrollback
+# keybind = cmd+shift+n=new_window
+# keybind = cmd+shift+t=new_tab
+
+# Advanced rendering
+adjust-underline-position = 1
+adjust-underline-thickness = 1
+
+# macOS specific
+macos-option-as-alt = true
+macos-non-native-fullscreen = false
+
+# Environment
+# This ensures all our tools are available
+working-directory = home
+
+# Custom command to quickly switch to nushell
+# Users can run 'nu' or 'nu-shell' from within zsh

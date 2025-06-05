@@ -1,0 +1,26 @@
+# Nix
+result
+result-*
+.direnv/
+
+# macOS
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Backup files
+*.backup
+*.bak
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
