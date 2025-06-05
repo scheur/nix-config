@@ -28,14 +28,14 @@ This repository contains a complete, reproducible macOS development environment 
 
 ```bash
 # One-liner to bootstrap everything
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/nix-config/main/bootstrap.sh | bash
+curl -fsSL https://raw.githubusercontent.com/scheur/nix-config/main/bootstrap.sh | bash
 ```
 
 ### Existing Nix Installation
 
 ```bash
 # Clone this repository
-git clone https://github.com/YOUR_USERNAME/nix-config.git ~/dev/Github/nix-config
+git clone https://github.com/scheur/nix-config.git ~/dev/Github/nix-config
 cd ~/dev/Github/nix-config
 
 # Build and activate
@@ -223,4 +223,4 @@ MIT - Feel free to use this as a template for your own configuration!
 
 ---
 
-**Note**: Remember to update `YOUR_USERNAME` with your GitHub username before using!
+**Note**: Remember to update `scheur` with your GitHub username before using!

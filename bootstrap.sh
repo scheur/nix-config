@@ -50,7 +50,7 @@ echo "experimental-features = nix-command flakes" > ~/.config/nix/nix.conf
 echo -e "${BLUE}📥 Cloning configuration repository...${NC}"
 if [[ ! -d "$HOME/dev/Github/nix-config" ]]; then
     mkdir -p "$HOME/dev/Github"
-    git clone https://github.com/YOUR_USERNAME/nix-config.git "$HOME/dev/Github/nix-config"
+    git clone https://github.com/scheur/nix-config.git "$HOME/dev/Github/nix-config"
 else
     echo -e "${GREEN}✓ Configuration already cloned${NC}"
     cd "$HOME/dev/Github/nix-config" && git pull
